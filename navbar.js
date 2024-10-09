@@ -14,7 +14,7 @@ const showTime = (el) => {
           timeComponent.innerHTML = 'Current local time is: ' + dateSplit[1] + ' ' + dateSplit[2];
           // setting diplay property to show time
           timeComponent.style.display = 'block';
-          var close = document.getElementById('close-button').style.display = 'block';
+          document.getElementById('close-button').style.display = 'block';
         }
       });
     })
