@@ -14,6 +14,7 @@ const showTime = (el) => {
           timeComponent.innerHTML = 'Current local time is: ' + dateSplit[1] + ' ' + dateSplit[2];
           // setting diplay property to show time
           timeComponent.style.display = 'block';
+          var close = document.getElementById('close-button').style.display = 'block';
         }
       });
     })
@@ -56,6 +57,12 @@ fetch('./navigation.json')
         menu.style.setProperty('--underline-left', el.target.offsetLeft + 'px');
         menu.style.setProperty('--underline-width', el.target.offsetWidth + 'px');
       };
+    }
+    // set onclick for the hide time button
+    var closeButton = document.querySelector('button');
+    closeButton.onclick = function() {
+      document.getElementById('time-div').style.display = 'none';
+      document.getElementById('close-button').style.display = 'none';
     }
   })
   .catch(err => alert('Error loading the navigation.json file: ', err));
