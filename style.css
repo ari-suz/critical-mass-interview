@@ -1,0 +1,52 @@
+body {
+  font-family: -apple-system, sans-serif;
+}
+#main {
+  margin: 3rem;
+  border-bottom: 1px solid gray;
+  width: 80%;
+}
+ul {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  display: flex;
+  text-align: center;
+  color: gray;
+  justify-content: center;
+  position: relative;
+  --decoration-left: 50%;
+  --decoration-width: 0;
+}
+
+/*ul::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: var(--decoration-left);
+  width: var(--decoration-width);
+  height: 4px;
+  background: skyblue;
+  transition: 300ms;
+} */
+li {
+  padding: 0 2rem;
+  text-align: center;
+}
+
+a { text-decoration: none; }
+
+a:hover {
+  border-bottom: 1px solid black;
+  color: black;
+  -webkit-transition: 1s all ease;
+  transition: 1s all ease;
+}
+.selected {
+  border-bottom: 1px solid black;
+  color: black;
+}
+#nav-list {
+  border-bottom: 1px solid gray;
+  width: 80%;
+}
