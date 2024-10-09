@@ -1,0 +1,32 @@
+{
+  "cities": [
+    {
+      "section": "cupertino",
+      "timezone": "America/Los_Angeles"
+    },
+    {
+      "section": "new-york-city",
+      "timezone": "America/New_York"
+    },
+    {
+      "section": "london",
+      "timezone": "Europe/London"
+    },
+    {
+      "section": "amsterdam",
+      "timezone": "Europe/Amsterdam"
+    },
+    {
+      "section": "tokyo",
+      "timezone": "Asia/Tokyo"
+    },
+    {
+      "section": "hong-kong",
+      "timezone": "Asia/Hong_Kong"
+    },
+    {
+      "section": "sydney",
+      "timezone": "Australia/Sydney"
+    }
+  ]
+}
