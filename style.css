@@ -1,52 +1,42 @@
 body {
   font-family: -apple-system, sans-serif;
 }
-#main {
-  margin: 3rem;
-  border-bottom: 1px solid gray;
-  width: 80%;
-}
-ul {
-  list-style-type: none;
-  margin: auto;
-  padding: 0;
+
+nav {
   display: flex;
-  text-align: center;
-  color: gray;
+  align-items: center;
   justify-content: center;
   position: relative;
-  --decoration-left: 50%;
-  --decoration-width: 0;
+  /* the --decoration will provide the underline for the active menu item */
+  --underline-left: 50%;
+  --underline-width: 0; 
+  color: gray;
+  font-weight: lighter;
+  border-bottom: 1px solid gray;
 }
 
-/*ul::after {
+nav a {
+  padding: .5rem;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+/* creates a pseudo element that will be used as the  */
+nav::after{
   content: '';
   position: absolute;
   bottom: 0;
-  left: var(--decoration-left);
-  width: var(--decoration-width);
-  height: 4px;
-  background: skyblue;
-  transition: 300ms;
-} */
-li {
-  padding: 0 2rem;
-  text-align: center;
+  left: var(--underline-left);
+  width: var(--underline-width);
+  height: 0.5px;
+  background: black;
+  transition: .2s ease-in-out;
 }
-
-a { text-decoration: none; }
 
 a:hover {
-  border-bottom: 1px solid black;
-  color: black;
-  -webkit-transition: 1s all ease;
-  transition: 1s all ease;
+  color: lightskyblue;
 }
+
 .selected {
-  border-bottom: 1px solid black;
   color: black;
-}
-#nav-list {
-  border-bottom: 1px solid gray;
-  width: 80%;
 }
