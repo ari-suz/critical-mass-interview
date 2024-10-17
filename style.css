@@ -7,7 +7,7 @@ nav {
   align-items: center;
   justify-content: center;
   position: relative;
-  /* the --decoration will provide the underline for the active menu item */
+  /* the --underline will provide the underline for the active menu item */
   --underline-left: 50%;
   --underline-width: 0; 
   color: gray;
